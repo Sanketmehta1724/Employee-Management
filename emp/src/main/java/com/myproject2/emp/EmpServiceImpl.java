@@ -28,6 +28,7 @@ public class EmpServiceImpl implements EmpService {
 
     @Override
     public List<Employee> readEmployees() {
+        List<Employee> employees = new ArrayList<>();
         // TODO Auto-generated method stub
         empRepository.findAll().forEach(entity -> {
             Employee emp = new Employee();
